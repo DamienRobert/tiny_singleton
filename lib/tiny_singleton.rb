@@ -10,6 +10,9 @@ module TinySingleton
 	def self.prepended(klass)
 		klass.singleton_class.send :prepend, ClassMethods
 	end
+	def self.included(klass)
+		klass.singleton_class.send :prepend, ClassMethods
+	end
 
 	module ClassMethods
 		def new(*args,&b)

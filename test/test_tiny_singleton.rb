@@ -41,4 +41,14 @@ class TestTinySingleton < Minitest::Test
 		bar=@fooClass.new("bar")
 		assert_equal foo.object_id, bar.object_id
 	end
+
+	def test_include
+		fooClass=Class.new do
+			include TinySingleton
+		end
+		foo=fooClass.new
+		bar=fooClass.new
+		assert_equal foo.object_id, bar.object_id
+	end
+
 end
