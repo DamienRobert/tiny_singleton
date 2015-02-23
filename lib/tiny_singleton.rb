@@ -1,10 +1,11 @@
 require 'tiny_singleton/version'
 
+#prepend TinySingleton in a class to make it a Singleton Class
 module TinySingleton
 	def clone
 		return self
 	end
-	alias clone dup
+	alias dup clone
 
 	def self.prepended(klass)
 		klass.singleton_class.send :prepend, ClassMethods
