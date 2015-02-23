@@ -7,7 +7,10 @@ begin
   gem 'rubygems-tasks', '~> 0.2'
   require 'rubygems/tasks'
 
-  Gem::Tasks.new
+  Gem::Tasks.new(sign: {checksum: true, pgp: true},
+               build: {tar: true}, scm: {status: true}) do |tasks|
+    tasks.console.command = 'pry'
+  end
 rescue LoadError => e
   warn e.message
   warn "Run `gem install rubygems-tasks` to install Gem::Tasks."
@@ -33,7 +36,3 @@ rescue LoadError => e
 end
 task :doc => :yard
 
-Gem::Tasks.new(sign: {checksum: true, pgp: true},
-               build: {tar: true}, scm: {status: true}) do |tasks|
-  tasks.console.command = 'pry'
-end
