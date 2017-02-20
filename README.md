@@ -1,10 +1,12 @@
 # tiny_singleton
 
 * [Homepage](https://github.com/DamienRobert/tiny_singleton#readme)
-* [Gems]("https://rubygems.org/gems/tiny_singleton)
 * [Issues](https://github.com/DamienRobert/tiny_singleton/issues)
-* [Documentation](http://rubydoc.info/gems/tiny_singleton/frames)
+* [Documentation](http://rubydoc.info/gems/tiny_singleto)
 * [Email](mailto:Damien.Olivier.Robert+gems at gmail.com)
+
+[![Gem Version](https://img.shields.io/gem/v/tiny_singleton.svg)](https://rubygems.org/gems/tiny_singleton)
+[![Build Status](https://travis-ci.org/DamienRobert/tiny_singleton.svg?branch=master)](https://travis-ci.org/DamienRobert/tiny_singleton)
 
 ## Description
 
@@ -15,6 +17,8 @@
   Pattern to an existing class without changing the way the code calls it.
 
 ## Features
+
+Very simple implementation, relying only on `Module#prepend`
 
 ## Examples
 
@@ -45,4 +49,4 @@ It needs at least `ruby 2.0` since it relies on `Module#prepend`
 
 Copyright © 2015–2016 Damien Robert
 
-MIT License. See {file:LICENSE.txt} for details.
+MIT License. See [LICENSE.txt](./LICENSE.txt) for details.
