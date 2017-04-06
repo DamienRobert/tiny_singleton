@@ -12,7 +12,7 @@
 
   Tiny Singleton is a very simple implementation of the Singleton Design
   Pattern. Compared to the Singleton module in the stdlib, one does not
-  need to class 'klass.instance' to get access to the singleton object, one
+  need to call 'klass.instance' to get access to the singleton object, one
   can call 'klass.new' as usual. It is thus easier to add the Singleton
   Pattern to an existing class without changing the way the code calls it.
 
