@@ -47,6 +47,6 @@ It needs at least `ruby 2.0` since it relies on `Module#prepend`
 
 ## Copyright
 
-Copyright © 2015–2016 Damien Robert
+Copyright © 2015–2017 Damien Robert
 
 MIT License. See [LICENSE.txt](./LICENSE.txt) for details.
