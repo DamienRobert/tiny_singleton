@@ -13,6 +13,4 @@ homepage: https://github.com/DamienRobert/tiny_singleton#readme
 
 development_dependencies:
   minitest: "~> 5.0"
-  rake: "~> 10"
-  rubygems-tasks: "~> 0.2"
-  yard: "~> 0.8"
+  rake: ">= 10.0"
